@@ -1,0 +1,54 @@
+# -- Central Processing Unit --
+#
+# CPU_COUNT                         -> true/false:      Print the count of CPU cores
+# CPU_PERCENT_INTERVAL              -> floating:        Interval (in seconds) to determine CPU usage%
+# PREP_CPU_INFO                     -> true/false:      Gather CPU at the start of the program (true), vs when CPU info is to be shown (false)
+# SHOW_CPU_INFO                     -> true/false:      If false, omits all CPU info
+
+CPU_COUNT=#bool true
+CPU_PERCENT_INTERVAL=0.0
+PREP_CPU_INFO=#bool true
+SHOW_CPU_INFO=#bool true
+
+# -- Operating System --
+#
+# OPERATING_SYSTEM                  -> true/false:      Print the name of the operating system in use
+# OPERATING_SYSTEM_ARCHITECTURE     -> true/false:      Print the name of the OS arch in use
+# OPERATING_SYSTEM_RELEASE          -> true/false:      Print the name of the OS release in use
+# OPERATING_SYSTEM_TRUNCATE_TITLE   -> true/false:      Shorten 'OPERATING SYSTEM' to 'OS'
+# OPERATING_SYSTEM_VERSION          -> true/false:      Print the current version of the OS in use
+# SHOW_OS_INFO                      -> true/false:      If false, omits all OS info; note that it formats awkwardly.
+
+OPERATING_SYSTEM=#bool true
+OPERATING_SYSTEM_ARCHITECTURE=#bool true
+OPERATING_SYSTEM_RELEASE=#bool true
+OPERATING_SYSTEM_TRUNCATE_TITLE=#bool true
+OPERATING_SYSTEM_VERSION=#bool false
+SHOW_OS_INFO=#bool true
+
+# -- User Info --
+#
+# COMPUTER_NAME                     -> true/false:      Print the name of the computer
+# USER_NAME                         -> true/false:      Print the name of the current user
+# SHOW_USER_INFO                    -> true/false:      If false, omits all user info
+
+COMPUTER_NAME=#bool true
+USER_NAME=#bool true
+SHOW_USER_INFO=#bool true
+
+# -- Miscellaneous --
+#
+# SYWFETCH_INFO                     -> true/false:      Print the current Sywfetch info
+# SYWFETCH_KEY_COLOR                -> string:          The color to print info titles (todo: put color list here)
+
+SYWFETCH_INFO=#bool true
+SYWFETCH_KEY_COLOR=blue
+
+# --------------------------------------------------------
+# DO NOT EDIT THESE VALUES! These are program information.
+# --------------------------------------------------------
+
+DONTEDIT_SYWFETCH_CURRENT_VERSION=1.0
+DONTEDIT_SYWFETCH_CURRENT_VERSION_CODENAME=Alpha
+DONTEDIT_SYWFETCH_CURRENT_VERSION_IS_LTS=#bool false
+DONTEDIT_SYWFETCH_NAME=sywfetch
